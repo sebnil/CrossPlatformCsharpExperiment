@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using CrossPlatformCsharpExperiment.Platform;
 
 namespace CrossPlatformCsharpExperiment
 {
@@ -23,6 +24,11 @@ namespace CrossPlatformCsharpExperiment
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnRandomNumber_Click(object sender, RoutedEventArgs e)
+        {
+            lblRandomNumber.Content = "Random number: " + RandomGenerator.RandomInteger().ToString("F0");
         }
     }
 }

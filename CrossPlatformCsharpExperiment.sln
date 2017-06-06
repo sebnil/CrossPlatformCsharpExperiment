@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossPlatformCsharpExperiment", "CrossPlatformCsharpExperiment\CrossPlatformCsharpExperiment.csproj", "{3A363648-FF7A-4F82-8FC1-672A6B4FDA54}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossPlatformCsharpExperiment.WPF", "CrossPlatformCsharpExperiment.WPF\CrossPlatformCsharpExperiment.WPF.csproj", "{3A363648-FF7A-4F82-8FC1-672A6B4FDA54}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CrossPlatformCsharpExperiment.Platform", "CrossPlatformCsharpExperiment.Platform\CrossPlatformCsharpExperiment.Platform.shproj", "{387A8BF7-2C52-4CD1-94D2-ACD3327064C1}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		CrossPlatformCsharpExperiment.Platform\CrossPlatformCsharpExperiment.Platform.projitems*{387a8bf7-2c52-4cd1-94d2-acd3327064c1}*SharedItemsImports = 13
+		CrossPlatformCsharpExperiment.Platform\CrossPlatformCsharpExperiment.Platform.projitems*{3a363648-ff7a-4f82-8fc1-672a6b4fda54}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
